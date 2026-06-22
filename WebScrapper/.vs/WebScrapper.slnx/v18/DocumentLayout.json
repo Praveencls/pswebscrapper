@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\CodeChallange\\PSScrapper\\WebScrapper\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F20BBFB0-4235-4562-8E4A-E20F05D171CA}|WebScrapper.csproj|e:\\codechallange\\psscrapper\\webscrapper\\controllers\\metadatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F20BBFB0-4235-4562-8E4A-E20F05D171CA}|WebScrapper.csproj|solutionrelative:controllers\\metadatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F20BBFB0-4235-4562-8E4A-E20F05D171CA}|WebScrapper.csproj|e:\\codechallange\\psscrapper\\webscrapper\\webscrapper.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{F20BBFB0-4235-4562-8E4A-E20F05D171CA}|WebScrapper.csproj|solutionrelative:webscrapper.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F20BBFB0-4235-4562-8E4A-E20F05D171CA}|WebScrapper.csproj|e:\\codechallange\\psscrapper\\webscrapper\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F20BBFB0-4235-4562-8E4A-E20F05D171CA}|WebScrapper.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F20BBFB0-4235-4562-8E4A-E20F05D171CA}|WebScrapper.csproj|e:\\codechallange\\psscrapper\\webscrapper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F20BBFB0-4235-4562-8E4A-E20F05D171CA}|WebScrapper.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\CodeChallange\\PSScrapper\\WebScrapper\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\CodeChallange\\PSScrapper\\WebScrapper\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-22T10:16:37.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MetadataController.cs",
+              "DocumentMoniker": "E:\\CodeChallange\\PSScrapper\\WebScrapper\\Controllers\\MetadataController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MetadataController.cs",
+              "ToolTip": "E:\\CodeChallange\\PSScrapper\\WebScrapper\\Controllers\\MetadataController.cs",
+              "RelativeToolTip": "Controllers\\MetadataController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T10:06:18.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebScrapper.http",
+              "DocumentMoniker": "E:\\CodeChallange\\PSScrapper\\WebScrapper\\WebScrapper.http",
+              "RelativeDocumentMoniker": "WebScrapper.http",
+              "ToolTip": "E:\\CodeChallange\\PSScrapper\\WebScrapper\\WebScrapper.http",
+              "RelativeToolTip": "WebScrapper.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-06-22T09:49:27.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\CodeChallange\\PSScrapper\\WebScrapper\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\CodeChallange\\PSScrapper\\WebScrapper\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T09:49:20.414Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

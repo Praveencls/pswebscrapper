@@ -1,0 +1,8 @@
+@WebScrapper_HostAddress = http://localhost:5132
+
+# The nested URL is percent-encoded so ?, &, =, spaces, and Unicode remain part
+# of the target URL instead of becoming parameters of this API request.
+GET {{WebScrapper_HostAddress}}/api/metadata?url=https%3A%2F%2Fwww.nexton.com%2Fhomefinder%2Fmodel%2Fashberry-by-david-weekley%2F%3Futm_source%3Dapi%26campaign%3Dsummer%2520sale
+Accept: application/json
+
+###
