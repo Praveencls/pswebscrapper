@@ -15,6 +15,9 @@ param(
     [Parameter(Mandatory, ParameterSetName = 'FromStandardInput')]
     [switch] $ReadFromStandardInput,
 
+    [ValidateSet('true', 'false', '1', '0')]
+    [string] $ScrapeDetails = 'false',
+
     [string] $HtmlAgilityPackPath,
 
     [string] $OutputPath
@@ -36,6 +39,13 @@ function Get-HtmlNodeAttribute {
     $attribute = $Node.Attributes[$Name]
     if ($attribute) { return $attribute.Value }
     return $null
+}
+
+function Get-NormalizedText {
+    param([AllowEmptyString()][string] $Value)
+
+    $decoded = [System.Net.WebUtility]::HtmlDecode($Value)
+    return (($decoded -split '\s+' | Where-Object { $_ }) -join ' ')
 }
 
 function Resolve-HtmlAgilityPackPath {
@@ -96,12 +106,22 @@ try {
     $homeArray = @($homes)
     if ($homeArray.Count -eq 0) { throw 'No homes were found.' }
 
-    $results = @(
-        foreach ($homeRecord in $homeArray) {
-            $homeLink = [string] $homeRecord.homeLink
-            if ($homeLink -notmatch '^https?://') {
-                throw "A valid absolute HTTP or HTTPS homeLink is required. Received '$homeLink'."
-            }
+    $shouldScrapeDetails = $ScrapeDetails -in @('true', '1')
+    $results = if (-not $shouldScrapeDetails) {
+        $homeArray
+    } else {
+        @(
+            foreach ($homeRecord in $homeArray) {
+                $homeLink = [string] $homeRecord.homeLink
+                if ([string]::IsNullOrWhiteSpace($homeLink)) {
+                    $homeLink = [string] $homeRecord.ItemLink
+                }
+                if ([string]::IsNullOrWhiteSpace($homeLink)) {
+                    $homeLink = [string] $homeRecord.itemUrl
+                }
+                if ($homeLink -notmatch '^https?://') {
+                    throw 'A valid absolute HTTP or HTTPS homeLink, ItemLink, or itemUrl is required.'
+                }
 
             $response = Invoke-WebRequest `
                 -Uri $homeLink `
@@ -114,36 +134,138 @@ try {
 
             $document = [HtmlAgilityPack.HtmlDocument]::new()
             $document.LoadHtml([string] $response.Content)
-            $builderContainer = $document.DocumentNode.DescendantsAndSelf() |
-                Where-Object { Test-HtmlClass $_ 'builderName' } |
-                Select-Object -First 1
 
-            $builderMeta = if ($builderContainer) {
-                $builderContainer.Descendants('meta') |
-                    Where-Object { $_.GetAttributeValue('itemprop', '') -ieq 'name' } |
+            $modelTitle = $document.GetElementbyId('ModelName')
+            $builderContainer = if ($modelTitle) {
+                $modelTitle.DescendantsAndSelf() |
+                    Where-Object {
+                        $_.Name -ieq 'div' -and
+                        (Test-HtmlClass $_ 'builderName')
+                    } |
                     Select-Object -First 1
             }
-            $builderName = if ($builderMeta) {
-                Get-HtmlNodeAttribute $builderMeta 'content'
+
+            $builderTitle = if ($builderContainer) {
+                $builderContainer.Descendants('h1') |
+                    Where-Object { Test-HtmlClass $_ 'builderName__title' } |
+                    Select-Object -First 1
+            }
+            $builderName = if ($builderTitle) {
+                Get-NormalizedText $builderTitle.InnerText
             }
 
+            $communityInfo = $document.DocumentNode.DescendantsAndSelf() |
+                Where-Object {
+                    $_.Name -ieq 'div' -and
+                    (Test-HtmlClass $_ 'community-info__info')
+                } |
+                Select-Object -First 1
+            $descriptionNode = if ($communityInfo) {
+                $communityInfo.Descendants('p') | Select-Object -First 1
+            }
+            if (-not $descriptionNode) {
+                $descriptionContainer = $document.GetElementbyId('DescriptionDiv')
+                if ($descriptionContainer -and
+                    $descriptionContainer.GetAttributeValue('itemprop', '') -ieq 'description') {
+                    $descriptionNode = $descriptionContainer.Descendants('p') |
+                        Select-Object -First 1
+                }
+            }
+
+            $photos = @(
+                $document.DocumentNode.Descendants('img') |
+                    Where-Object {
+                        $_.GetAttributeValue('itemprop', '') -ieq 'photo'
+                    } |
+                    ForEach-Object {
+                        $src = Get-HtmlNodeAttribute $_ 'src'
+                        $alt = Get-HtmlNodeAttribute $_ 'alt'
+
+                        [pscustomobject][ordered]@{
+                            src = if ($src) {
+                                [System.Net.WebUtility]::HtmlDecode($src).Trim()
+                            } else { $null }
+                            alt = if ($alt) {
+                                [System.Net.WebUtility]::HtmlDecode($alt).Trim()
+                            } else { $null }
+                        }
+                    }
+            )
+
+            $floorplans = @(
+                $document.DocumentNode.Descendants('img') |
+                    Where-Object {
+                        $_.GetAttributeValue('itemprop', '') -ieq 'additionalProperty'
+                    } |
+                    ForEach-Object {
+                        $src = Get-HtmlNodeAttribute $_ 'src'
+                        $alt = Get-HtmlNodeAttribute $_ 'alt'
+
+                        [pscustomobject][ordered]@{
+                            src = if ($src) {
+                                [System.Net.WebUtility]::HtmlDecode($src).Trim()
+                            } else { $null }
+                            alt = if ($alt) {
+                                [System.Net.WebUtility]::HtmlDecode($alt).Trim()
+                            } else { $null }
+                        }
+                    }
+            )
+
+            $homeIdNode = $document.GetElementbyId('homeId')
+            $detailHomeId = if ($homeIdNode -and
+                $homeIdNode.Name -ieq 'input' -and
+                $homeIdNode.GetAttributeValue('type', '') -ieq 'hidden') {
+                Get-HtmlNodeAttribute $homeIdNode 'value'
+            }
+
+            $contactDetailProperties = [ordered]@{}
+            $contactDetailsNode = $document.GetElementbyId('ContactDetails')
+            if ($contactDetailsNode) {
+                $contactDetailsNode.ChildNodes |
+                    Where-Object {
+                        $_.NodeType -eq [HtmlAgilityPack.HtmlNodeType]::Element -and
+                        $_.Name -ieq 'div'
+                    } |
+                    ForEach-Object {
+                        $className = ($_.GetAttributeValue('class', '') -split '\s+' |
+                            Where-Object { $_ } |
+                            Select-Object -First 1)
+
+                        if ($className) {
+                            $contactDetailProperties[$className] =
+                                Get-NormalizedText $_.InnerText
+                        }
+                    }
+            }
+            $contactDetail = [pscustomobject] $contactDetailProperties
+
             [pscustomobject][ordered]@{
-                homeId         = $homeRecord.homeId
-                homeLink       = $homeLink
-                thumbnailImage = $homeRecord.thumbnailImage
-                homeName       = $homeRecord.homeName
-                builderName    = if ($builderName) {
+                id = if ($detailHomeId) {
+                    [System.Net.WebUtility]::HtmlDecode($detailHomeId).Trim()
+                } else {
+                    $null
+                }
+                builderName = if ($builderName) {
                     [System.Net.WebUtility]::HtmlDecode($builderName).Trim()
                 } else {
                     $homeRecord.builderName
                 }
-                homeAddress    = $homeRecord.homeAddress
-                badge          = $homeRecord.badge
+                description = if ($descriptionNode) {
+                    Get-NormalizedText $descriptionNode.InnerText
+                } else {
+                    $null
+                }
+                photos = $photos
+                floorplans = $floorplans
+                ContactDetail = $contactDetail
             }
-        }
-    )
+            }
+        )
+    }
 
-    $json = ConvertTo-Json -InputObject $results -Depth 5
+    $resultArray = @($results)
+    $json = ConvertTo-Json -InputObject $resultArray -Depth 5
     if ($OutputPath) { $json | Set-Content -LiteralPath $OutputPath -Encoding utf8 }
 
     $json

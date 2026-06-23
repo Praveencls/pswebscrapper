@@ -15,7 +15,8 @@ public sealed class HomeDetailsService(IPowerShellJsonRunner runner) : IHomeDeta
             "Get-HomeDetails.ps1",
             new Dictionary<string, string?>
             {
-                ["ReadFromStandardInput"] = null
+                ["ReadFromStandardInput"] = null,
+                ["ScrapeDetails"] = "1"
             },
             input,
             cancellationToken);
