@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -7,7 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.12.4" GeneratePathProperty="true" />
+    <Content Include="$(PkgHtmlAgilityPack)\lib\Net45\HtmlAgilityPack.dll" Link="HtmlAgilityPack.PowerShell.dll" CopyToOutputDirectory="PreserveNewest" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Keep generated sources out of compilation when CI overrides obj/bin paths. -->
+    <Compile Remove="obj\**;bin\**" />
   </ItemGroup>
 
 </Project>

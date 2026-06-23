@@ -5,19 +5,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddSingleton<IPowerShellJsonRunner, PowerShellJsonRunner>();
 builder.Services.AddScoped<IWebMetadataService, PowerShellWebMetadataService>();
-builder.Services.AddHttpClient<IAllHomesService, AllHomesService>(client =>
-{
-    client.Timeout = TimeSpan.FromSeconds(30);
-    client.DefaultRequestHeaders.UserAgent.ParseAdd("Mozilla/5.0 (compatible; WebScrapper/1.0)");
-    client.DefaultRequestHeaders.Accept.ParseAdd("text/html,application/xhtml+xml;q=0.9,*/*;q=0.8");
-});
-builder.Services.AddHttpClient<IHomeDetailsService, HomeDetailsService>(client =>
-{
-    client.Timeout = TimeSpan.FromSeconds(30);
-    client.DefaultRequestHeaders.UserAgent.ParseAdd("Mozilla/5.0 (compatible; WebScrapper/1.0)");
-    client.DefaultRequestHeaders.Accept.ParseAdd("text/html,application/xhtml+xml;q=0.9,*/*;q=0.8");
-});
+builder.Services.AddScoped<IAllHomesService, AllHomesService>();
+builder.Services.AddScoped<IHomeDetailsService, HomeDetailsService>();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
