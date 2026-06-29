@@ -20,11 +20,19 @@ param(
 
     [string] $HtmlAgilityPackPath,
 
-    [string] $OutputPath
+    [string] $OutputPath,
+
+    [string] $ImageOutputDirectory = (Join-Path $PSScriptRoot 'Images\details')
 )
 
 $ErrorActionPreference = 'Stop'
 $ProgressPreference = 'SilentlyContinue'
+
+function Write-StatusMessage {
+    param([Parameter(Mandatory)][string] $Message)
+
+    [Console]::Error.WriteLine("[Get-HomeDetails] $Message")
+}
 
 function Test-HtmlClass {
     param($Node, [Parameter(Mandatory)][string] $ClassName)
@@ -46,6 +54,22 @@ function Get-NormalizedText {
 
     $decoded = [System.Net.WebUtility]::HtmlDecode($Value)
     return (($decoded -split '\s+' | Where-Object { $_ }) -join ' ')
+}
+
+function Get-DirectText {
+    param($Node)
+
+    if (-not $Node) { return $null }
+
+    $text = @(
+        $Node.ChildNodes |
+            Where-Object {
+                $_.NodeType -eq [HtmlAgilityPack.HtmlNodeType]::Text
+            } |
+            ForEach-Object { $_.InnerText }
+    ) -join ' '
+
+    return Get-NormalizedText $text
 }
 
 function Resolve-HtmlAgilityPackPath {
@@ -78,7 +102,85 @@ function Resolve-HtmlAgilityPackPath {
         '.nuget\packages\htmlagilitypack\1.12.4\lib\Net45\HtmlAgilityPack.dll'
 }
 
+function Get-SafePathPart {
+    param([AllowEmptyString()][string] $Value)
+
+    $safeValue = $Value
+    if ([string]::IsNullOrWhiteSpace($safeValue)) { $safeValue = 'unknown' }
+
+    $invalidChars = [regex]::Escape((-join [System.IO.Path]::GetInvalidFileNameChars()))
+    $safeValue = ($safeValue -replace "[$invalidChars]", '-').Trim('-')
+    if ([string]::IsNullOrWhiteSpace($safeValue)) { return 'unknown' }
+
+    return $safeValue
+}
+
+function Get-ImageFileName {
+    param([Parameter(Mandatory)][uri] $ImageUri)
+
+    $leaf = [System.IO.Path]::GetFileName($ImageUri.AbsolutePath)
+    if ([string]::IsNullOrWhiteSpace($leaf)) { $leaf = 'image' }
+
+    $extension = [System.IO.Path]::GetExtension($leaf)
+    if ([string]::IsNullOrWhiteSpace($extension)) { $extension = '.jpg' }
+
+    $baseName = [System.IO.Path]::GetFileNameWithoutExtension($leaf)
+    $baseName = Get-SafePathPart $baseName
+
+    $sha = [System.Security.Cryptography.SHA256]::Create()
+    try {
+        $bytes = [System.Text.Encoding]::UTF8.GetBytes($ImageUri.AbsoluteUri)
+        $hash = [System.BitConverter]::ToString($sha.ComputeHash($bytes)).Replace('-', '').Substring(0, 12).ToLowerInvariant()
+    }
+    finally {
+        $sha.Dispose()
+    }
+
+    return "$baseName-$hash$extension"
+}
+
+function Save-ImageIfMissing {
+    param(
+        [AllowEmptyString()][string] $ImageUrl,
+        [Parameter(Mandatory)][uri] $BaseUrl,
+        [Parameter(Mandatory)][string] $OutputDirectory
+    )
+
+    if ([string]::IsNullOrWhiteSpace($ImageUrl)) { return $null }
+
+    try {
+        $decodedUrl = [System.Net.WebUtility]::HtmlDecode($ImageUrl).Trim()
+        $imageUri = [uri]::new($BaseUrl, $decodedUrl)
+        if ($imageUri.Scheme -notin @('http', 'https')) { return $null }
+
+        if (-not (Test-Path -LiteralPath $OutputDirectory -PathType Container)) {
+            New-Item -ItemType Directory -Path $OutputDirectory -Force | Out-Null
+        }
+
+        $filePath = Join-Path $OutputDirectory (Get-ImageFileName $imageUri)
+        if (-not (Test-Path -LiteralPath $filePath -PathType Leaf)) {
+            Invoke-WebRequest `
+                -Uri $imageUri.AbsoluteUri `
+                -OutFile $filePath `
+                -MaximumRedirection 10 `
+                -UseBasicParsing `
+                -Headers @{
+                    'User-Agent' = 'Mozilla/5.0 (compatible; WebScrapper/1.0)'
+                    'Accept' = 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+                }
+        }
+
+        return $filePath
+    }
+    catch {
+        Write-Warning "Failed to download image '$ImageUrl': $($_.Exception.Message)"
+        return $null
+    }
+}
+
 try {
+    Write-StatusMessage "In progress: loading home records."
+
     $HtmlAgilityPackPath = Resolve-HtmlAgilityPackPath
 
     if (-not (Test-Path -LiteralPath $HtmlAgilityPackPath -PathType Leaf)) {
@@ -108,10 +210,14 @@ try {
 
     $shouldScrapeDetails = $ScrapeDetails -in @('true', '1')
     $results = if (-not $shouldScrapeDetails) {
+        Write-StatusMessage "In progress: detail scraping disabled; returning $($homeArray.Count) home record(s)."
         $homeArray
     } else {
+        $detailIndex = 0
         @(
             foreach ($homeRecord in $homeArray) {
+                $detailIndex++
+
                 $homeLink = [string] $homeRecord.homeLink
                 if ([string]::IsNullOrWhiteSpace($homeLink)) {
                     $homeLink = [string] $homeRecord.ItemLink
@@ -122,6 +228,8 @@ try {
                 if ($homeLink -notmatch '^https?://') {
                     throw 'A valid absolute HTTP or HTTPS homeLink, ItemLink, or itemUrl is required.'
                 }
+
+            Write-StatusMessage "In progress: scraping detail $detailIndex of $($homeArray.Count): $homeLink"
 
             $response = Invoke-WebRequest `
                 -Uri $homeLink `
@@ -134,6 +242,23 @@ try {
 
             $document = [HtmlAgilityPack.HtmlDocument]::new()
             $document.LoadHtml([string] $response.Content)
+
+            $homeIdNode = $document.GetElementbyId('homeId')
+            $detailHomeId = if ($homeIdNode -and
+                $homeIdNode.Name -ieq 'input' -and
+                $homeIdNode.GetAttributeValue('type', '') -ieq 'hidden') {
+                Get-HtmlNodeAttribute $homeIdNode 'value'
+            }
+
+            $downloadHomeId = if ($detailHomeId) {
+                [System.Net.WebUtility]::HtmlDecode($detailHomeId).Trim()
+            } elseif ($homeRecord.homeId) {
+                [string] $homeRecord.homeId
+            } else {
+                [System.IO.Path]::GetFileName($homeLink.TrimEnd([char[]] @('/')))
+            }
+
+            $homeImageDirectory = Join-Path $ImageOutputDirectory (Get-SafePathPart $downloadHomeId)
 
             $modelTitle = $document.GetElementbyId('ModelName')
             $builderContainer = if ($modelTitle) {
@@ -151,7 +276,16 @@ try {
                     Select-Object -First 1
             }
             $builderName = if ($builderTitle) {
-                Get-NormalizedText $builderTitle.InnerText
+                Get-DirectText $builderTitle
+            }
+
+            $modelNameTitle = if ($builderTitle) {
+                $builderTitle.Descendants('span') |
+                    Where-Object { Test-HtmlClass $_ 'modelName__title' } |
+                    Select-Object -First 1
+            }
+            $homeName = if ($modelNameTitle) {
+                Get-DirectText $modelNameTitle
             }
 
             $communityInfo = $document.DocumentNode.DescendantsAndSelf() |
@@ -180,11 +314,17 @@ try {
                     ForEach-Object {
                         $src = Get-HtmlNodeAttribute $_ 'src'
                         $alt = Get-HtmlNodeAttribute $_ 'alt'
+                        $normalizedSrc = if ($src) {
+                            [System.Net.WebUtility]::HtmlDecode($src).Trim()
+                        } else { $null }
+                        $photoDirectory = Join-Path $homeImageDirectory 'photos'
 
                         [pscustomobject][ordered]@{
-                            src = if ($src) {
-                                [System.Net.WebUtility]::HtmlDecode($src).Trim()
-                            } else { $null }
+                            src = $normalizedSrc
+                            localPath = Save-ImageIfMissing `
+                                -ImageUrl $normalizedSrc `
+                                -BaseUrl ([uri] $homeLink) `
+                                -OutputDirectory $photoDirectory
                             alt = if ($alt) {
                                 [System.Net.WebUtility]::HtmlDecode($alt).Trim()
                             } else { $null }
@@ -200,24 +340,23 @@ try {
                     ForEach-Object {
                         $src = Get-HtmlNodeAttribute $_ 'src'
                         $alt = Get-HtmlNodeAttribute $_ 'alt'
+                        $normalizedSrc = if ($src) {
+                            [System.Net.WebUtility]::HtmlDecode($src).Trim()
+                        } else { $null }
+                        $floorplanDirectory = Join-Path $homeImageDirectory 'floorplans'
 
                         [pscustomobject][ordered]@{
-                            src = if ($src) {
-                                [System.Net.WebUtility]::HtmlDecode($src).Trim()
-                            } else { $null }
+                            src = $normalizedSrc
+                            localPath = Save-ImageIfMissing `
+                                -ImageUrl $normalizedSrc `
+                                -BaseUrl ([uri] $homeLink) `
+                                -OutputDirectory $floorplanDirectory
                             alt = if ($alt) {
                                 [System.Net.WebUtility]::HtmlDecode($alt).Trim()
                             } else { $null }
                         }
                     }
             )
-
-            $homeIdNode = $document.GetElementbyId('homeId')
-            $detailHomeId = if ($homeIdNode -and
-                $homeIdNode.Name -ieq 'input' -and
-                $homeIdNode.GetAttributeValue('type', '') -ieq 'hidden') {
-                Get-HtmlNodeAttribute $homeIdNode 'value'
-            }
 
             $contactDetailProperties = [ordered]@{}
             $contactDetailsNode = $document.GetElementbyId('ContactDetails')
@@ -251,6 +390,11 @@ try {
                 } else {
                     $homeRecord.builderName
                 }
+                homeName = if ($homeName) {
+                    [System.Net.WebUtility]::HtmlDecode($homeName).Trim()
+                } else {
+                    $homeRecord.homeName
+                }
                 description = if ($descriptionNode) {
                     Get-NormalizedText $descriptionNode.InnerText
                 } else {
@@ -268,8 +412,10 @@ try {
     $json = ConvertTo-Json -InputObject $resultArray -Depth 5
     if ($OutputPath) { $json | Set-Content -LiteralPath $OutputPath -Encoding utf8 }
 
+    Write-StatusMessage "Complete: processed $($resultArray.Count) home detail record(s)."
     $json
 }
 catch {
+    Write-StatusMessage "Failed: $($_.Exception.Message)"
     throw "Unable to retrieve home details: $($_.Exception.Message)"
 }

@@ -7,11 +7,19 @@ param(
     [ValidateNotNullOrEmpty()]
     [string] $DivId,
 
-    [string] $HtmlAgilityPackPath
+    [string] $HtmlAgilityPackPath,
+
+    [string] $ImageOutputDirectory = (Join-Path $PSScriptRoot 'Images\thumbnails')
 )
 
 $ErrorActionPreference = 'Stop'
 $ProgressPreference = 'SilentlyContinue'
+
+function Write-StatusMessage {
+    param([Parameter(Mandatory)][string] $Message)
+
+    [Console]::Error.WriteLine("[Get-AllHomes] $Message")
+}
 
 function Test-HtmlClass {
     param($Node, [Parameter(Mandatory)][string] $ClassName)
@@ -43,7 +51,87 @@ function Find-ByClass {
         Select-Object -First 1
 }
 
+function Get-ImageFileName {
+    param([Parameter(Mandatory)][uri] $ImageUri)
+
+    $leaf = [System.IO.Path]::GetFileName($ImageUri.AbsolutePath)
+    if ([string]::IsNullOrWhiteSpace($leaf)) { $leaf = 'image' }
+
+    $extension = [System.IO.Path]::GetExtension($leaf)
+    if ([string]::IsNullOrWhiteSpace($extension)) { $extension = '.jpg' }
+
+    $baseName = [System.IO.Path]::GetFileNameWithoutExtension($leaf)
+    $invalidChars = [regex]::Escape((-join [System.IO.Path]::GetInvalidFileNameChars()))
+    $baseName = ($baseName -replace "[$invalidChars]", '-').Trim('-')
+    if ([string]::IsNullOrWhiteSpace($baseName)) { $baseName = 'image' }
+
+    $sha = [System.Security.Cryptography.SHA256]::Create()
+    try {
+        $bytes = [System.Text.Encoding]::UTF8.GetBytes($ImageUri.AbsoluteUri)
+        $hash = [System.BitConverter]::ToString($sha.ComputeHash($bytes)).Replace('-', '').Substring(0, 12).ToLowerInvariant()
+    }
+    finally {
+        $sha.Dispose()
+    }
+
+    return "$baseName-$hash$extension"
+}
+
+function Get-SafePathPart {
+    param([AllowEmptyString()][string] $Value)
+
+    $safeValue = $Value
+    if ([string]::IsNullOrWhiteSpace($safeValue)) { $safeValue = 'unknown' }
+
+    $invalidChars = [regex]::Escape((-join [System.IO.Path]::GetInvalidFileNameChars()))
+    $safeValue = ($safeValue -replace "[$invalidChars]", '-').Trim('-')
+    if ([string]::IsNullOrWhiteSpace($safeValue)) { return 'unknown' }
+
+    return $safeValue
+}
+
+function Save-ImageIfMissing {
+    param(
+        [AllowEmptyString()][string] $ImageUrl,
+        [Parameter(Mandatory)][uri] $BaseUrl,
+        [Parameter(Mandatory)][string] $OutputDirectory
+    )
+
+    if ([string]::IsNullOrWhiteSpace($ImageUrl)) { return $null }
+
+    try {
+        $decodedUrl = [System.Net.WebUtility]::HtmlDecode($ImageUrl).Trim()
+        $imageUri = [uri]::new($BaseUrl, $decodedUrl)
+        if ($imageUri.Scheme -notin @('http', 'https')) { return $null }
+
+        if (-not (Test-Path -LiteralPath $OutputDirectory -PathType Container)) {
+            New-Item -ItemType Directory -Path $OutputDirectory -Force | Out-Null
+        }
+
+        $filePath = Join-Path $OutputDirectory (Get-ImageFileName $imageUri)
+        if (-not (Test-Path -LiteralPath $filePath -PathType Leaf)) {
+            Invoke-WebRequest `
+                -Uri $imageUri.AbsoluteUri `
+                -OutFile $filePath `
+                -MaximumRedirection 10 `
+                -UseBasicParsing `
+                -Headers @{
+                    'User-Agent' = 'Mozilla/5.0 (compatible; WebScrapper/1.0)'
+                    'Accept' = 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+                }
+        }
+
+        return $filePath
+    }
+    catch {
+        Write-Warning "Failed to download image '$ImageUrl': $($_.Exception.Message)"
+        return $null
+    }
+}
+
 try {
+    Write-StatusMessage "In progress: scraping homes from '$Url'."
+
     if ([string]::IsNullOrWhiteSpace($HtmlAgilityPackPath)) {
         $HtmlAgilityPackPath = Join-Path `
             $env:WEB_SCRAPPER_APP_BASE_DIRECTORY `
@@ -80,11 +168,21 @@ try {
     }
 
     $pageUrl = [uri] $Url
-    $results = @(
+    $homeNodes = @(
         $container.ChildNodes |
             Where-Object { $_.NodeType -eq [HtmlAgilityPack.HtmlNodeType]::Element } |
-            ForEach-Object {
-                $homeNode = $_
+            ForEach-Object { $_ }
+    )
+
+    $results = @(
+        for ($index = 0; $index -lt $homeNodes.Count; $index++) {
+                $number = $index + 1
+                $homeNode = $homeNodes[$index]
+                $homeId = [System.Net.WebUtility]::HtmlDecode(
+                    (Get-HtmlNodeAttribute $homeNode 'homeid'))
+
+                Write-StatusMessage "In progress: processing card $number of $($homeNodes.Count) (homeId: $homeId)."
+
                 $homeLink = [System.Net.WebUtility]::HtmlDecode(
                     (Get-HtmlNodeAttribute $homeNode 'homelink'))
 
@@ -112,13 +210,22 @@ try {
                 $builderNameNode = Find-ByClass $homeNode 'builderName'
                 $homeAddressNode = Find-ByClass $homeNode 'homeAddress'
 
+                $thumbnailImage = if ($thumbnailImage) {
+                    [System.Net.WebUtility]::HtmlDecode($thumbnailImage).Trim()
+                } else { $null }
+
+                $thumbnailDirectory = Join-Path $ImageOutputDirectory (Get-SafePathPart $homeId)
+
+                $localThumbnailPath = Save-ImageIfMissing `
+                    -ImageUrl $thumbnailImage `
+                    -BaseUrl $pageUrl `
+                    -OutputDirectory $thumbnailDirectory
+
                 [pscustomobject][ordered]@{
-                    homeId        = [System.Net.WebUtility]::HtmlDecode(
-                        (Get-HtmlNodeAttribute $homeNode 'homeid'))
+                    homeId        = $homeId
                     homeLink      = $homeLink
-                    thumbnailImage = if ($thumbnailImage) {
-                        [System.Net.WebUtility]::HtmlDecode($thumbnailImage).Trim()
-                    } else { $null }
+                    thumbnailImage = $thumbnailImage
+                    localImagePath = $localThumbnailPath
                     homeName      = if ($homeNameNode) {
                         Get-NormalizedText $homeNameNode.InnerText
                     } else { $null }
@@ -132,11 +239,13 @@ try {
                         Get-NormalizedText $badgeNode.InnerText
                     } else { $null }
                 }
-            }
+        }
     )
 
+    Write-StatusMessage "Complete: scraped $($results.Count) home card(s)."
     ConvertTo-Json -InputObject $results -Depth 5 -Compress
 }
 catch {
+    Write-StatusMessage "Failed: $($_.Exception.Message)"
     throw "Unable to retrieve homes from '$Url': $($_.Exception.Message)"
 }
