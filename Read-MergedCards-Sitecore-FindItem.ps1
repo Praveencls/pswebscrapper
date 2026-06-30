@@ -2,7 +2,7 @@
 param(
     [string] $JsonPath = (Join-Path $PSScriptRoot 'MergedCards.json'),
     [string] $IndexName = 'sitecore_master_index',
-    [string] $SitecoreItemIdField = 'itemid',
+    [string] $SitecoreItemIdField = 'Integration ID',
     [string] $Language = 'en',
     [scriptblock] $ProcessRecord
 )
