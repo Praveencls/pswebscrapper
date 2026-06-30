@@ -392,8 +392,16 @@ try {
                             Select-Object -First 1)
 
                         if ($className) {
-                            $contactDetailProperties[$className] =
+                            $contactDetailProperties[$className] = if (
+                                $className -ieq 'salresRepHours'
+                            ) {
+                                # Preserve paragraph, strong, span, and br markup
+                                # for Sitecore Rich Text Editor fields.
+                                $_.InnerHtml.Trim()
+                            }
+                            else {
                                 Get-NormalizedText $_.InnerText
+                            }
                         }
                     }
             }
