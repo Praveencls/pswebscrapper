@@ -56,6 +56,26 @@ function Get-NormalizedText {
     return (($decoded -split '\s+' | Where-Object { $_ }) -join ' ')
 }
 
+function Resolve-MediaUrl {
+    param(
+        [AllowEmptyString()][string] $MediaUrl,
+        [Parameter(Mandatory)][string] $HomeUrl
+    )
+
+    if ([string]::IsNullOrWhiteSpace($MediaUrl)) { return $null }
+
+    $decodedUrl = [System.Net.WebUtility]::HtmlDecode($MediaUrl).Trim()
+    try {
+        $homeUri = [uri] $HomeUrl
+        $homeOrigin = [uri] ($homeUri.GetLeftPart(
+            [System.UriPartial]::Authority) + '/')
+        return ([uri]::new($homeOrigin, $decodedUrl)).AbsoluteUri
+    }
+    catch {
+        return $decodedUrl
+    }
+}
+
 function Get-DirectText {
     param($Node)
 
@@ -314,9 +334,9 @@ try {
                     ForEach-Object {
                         $src = Get-HtmlNodeAttribute $_ 'src'
                         $alt = Get-HtmlNodeAttribute $_ 'alt'
-                        $normalizedSrc = if ($src) {
-                            [System.Net.WebUtility]::HtmlDecode($src).Trim()
-                        } else { $null }
+                        $normalizedSrc = Resolve-MediaUrl `
+                            -MediaUrl $src `
+                            -HomeUrl $homeLink
                         $photoDirectory = Join-Path $homeImageDirectory 'photos'
 
                         [pscustomobject][ordered]@{
@@ -340,9 +360,9 @@ try {
                     ForEach-Object {
                         $src = Get-HtmlNodeAttribute $_ 'src'
                         $alt = Get-HtmlNodeAttribute $_ 'alt'
-                        $normalizedSrc = if ($src) {
-                            [System.Net.WebUtility]::HtmlDecode($src).Trim()
-                        } else { $null }
+                        $normalizedSrc = Resolve-MediaUrl `
+                            -MediaUrl $src `
+                            -HomeUrl $homeLink
                         $floorplanDirectory = Join-Path $homeImageDirectory 'floorplans'
 
                         [pscustomobject][ordered]@{
@@ -410,6 +430,7 @@ try {
 
     $resultArray = @($results)
     $json = ConvertTo-Json -InputObject $resultArray -Depth 5
+    $json = $json -replace '\\u0026', '&'
     if ($OutputPath) { $json | Set-Content -LiteralPath $OutputPath -Encoding utf8 }
 
     Write-StatusMessage "Complete: processed $($resultArray.Count) home detail record(s)."

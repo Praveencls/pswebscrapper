@@ -1,0 +1,1022 @@
+﻿[
+    {
+        "homeId":  "360032",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/richmond-american-portfolio-celeste/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/lbqkhznb/rah-celeste-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134243720406500000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\360032\\rah-celeste-elevation-a-927fca2f0d86.jpg",
+        "homeName":  "Portfolio - Celeste",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "360035",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/richmond-american-portfolio-cassandra/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/sqeiavj2/rah-cassandra-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134243721012130000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\360035\\rah-cassandra-elevation-a-88350433f0e0.jpg",
+        "homeName":  "Portfolio - Cassandra",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "360036",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/richmond-american-portfolio-raleigh/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/seqkdnfe/rah-raleigh-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134243720203300000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\360036\\rah-raleigh-elevation-a-f2ccb56fce89.jpg",
+        "homeName":  "Portfolio - Raleigh",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "362565",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/taylor-morrison-london/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/0nel5e4e/london-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134268606908470000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362565\\london-elevation-a-e0b08c254bb9.jpg",
+        "homeName":  "Landmark - London",
+        "builderName":  "Taylor Morrison",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "362566",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/taylor-morrison-madrid/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/yngpstos/madrid-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134268606140100000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362566\\madrid-elevation-a-65de04fcbe59.jpg",
+        "homeName":  "Landmark - Madrid",
+        "builderName":  "Taylor Morrison",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "362567",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/taylor-morrison-paris/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/srbdjd0o/paris-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134268607617030000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362567\\paris-elevation-a-16cc591c6e5b.jpg",
+        "homeName":  "Landmark - Paris",
+        "builderName":  "Taylor Morrison",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "362569",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/taylor-morrison-york/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/qwvjbdia/york-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134268609219570000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362569\\york-elevation-a-40d79956d4d5.jpg",
+        "homeName":  "Landmark - York",
+        "builderName":  "Taylor Morrison",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "362645",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/taylor-morrison-crossing/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/2hihabwk/crossing-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134268644968800000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362645\\crossing-elevation-a-aeb6e3f8f057.jpg",
+        "homeName":  "Journey - Crossing",
+        "builderName":  "Taylor Morrison",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "362646",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/taylor-morrison-embark/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/zajbgs0e/embark-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134268643777600000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362646\\embark-elevation-a-3e206f09bab3.jpg",
+        "homeName":  "Journey - Embark",
+        "builderName":  "Taylor Morrison",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "362647",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/taylor-morrison-overland/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/4x4elf5i/overland-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134268646154770000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362647\\overland-elevation-a-122cf53f44cf.jpg",
+        "homeName":  "Journey - Overland",
+        "builderName":  "Taylor Morrison",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "362649",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/taylor-morrison-cardinal/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/a1sn2wz4/cardinal-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134268646721900000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362649\\cardinal-elevation-a-88705b075dab.jpg",
+        "homeName":  "Journey - Cardinal",
+        "builderName":  "Taylor Morrison",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "362651",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/taylor-morrison-compass/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/bi1bk0vl/compass-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134268644393430000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362651\\compass-elevation-a-fd3a76f54eea.jpg",
+        "homeName":  "Journey - Compass",
+        "builderName":  "Taylor Morrison",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "362652",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/taylor-morrison-beacon/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/xdndqk1c/beacon-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134268645584970000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362652\\beacon-elevation-a-67367317db10.jpg",
+        "homeName":  "Journey - Beacon",
+        "builderName":  "Taylor Morrison",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "288724",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/brookfield-residential-sage-indigo/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/cjqe2ucl/indigo-a.jpg?mode=min&quality=80&width=720&rnd=134250548467130000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\288724\\indigo-a-e17172f069bf.jpg",
+        "homeName":  "Highland Sage - Indigo",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "351887",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-77-12563-w-odeum-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/cjqe2ucl/indigo-a.jpg?mode=min&quality=80&width=720&rnd=134250548467130000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\351887\\indigo-a-e17172f069bf.jpg",
+        "homeName":  "Highland Sage - Indigo",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 77 - 12563 W Odeum Ln",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "288725",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/brookfield-residential-sage-azure/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/gpghh5kx/azure-a.jpg?mode=min&quality=80&width=720&rnd=134250551493430000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\288725\\azure-a-cfab08d46f27.jpg",
+        "homeName":  "Highland Sage - Azure",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Home Plan",
+        "badge":  "Model Home & Virtual Tour"
+    },
+    {
+        "homeId":  "342768",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-16-12570-w-odeum-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/rhjpnh13/indigo-b.jpg?mode=min&quality=80&width=720&rnd=134250548635900000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\342768\\indigo-b-f63fed25875b.jpg",
+        "homeName":  "Sage - Indigo",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 16 - 12570 W Odeum Ln",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "358217",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-22-12518-w-odeum-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/rhjpnh13/indigo-b.jpg?mode=min&quality=80&width=720&rnd=134250548635900000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\358217\\indigo-b-f63fed25875b.jpg",
+        "homeName":  "Highland Sage - Indigo",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 22 - 12518 W Odeum Ln",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "360889",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-25-12506-w-odeum-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/rhjpnh13/indigo-b.jpg?mode=min&quality=80&width=720&rnd=134250548635900000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\360889\\indigo-b-f63fed25875b.jpg",
+        "homeName":  "Highland Sage - Indigo",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 25 - 12506 W Odeum Ln",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "360168",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-71-12511-w-odeum-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/bxrnxpnm/indigo-c.jpg?mode=min&quality=80&width=720&rnd=134250548787330000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\360168\\indigo-c-63c3af4ad5ef.jpg",
+        "homeName":  "Highland Sage - Indigo",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 71 - 12511 W Odeum Ln",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "351306",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/pulte-bergamot/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/sa4jyzwn/bergamot-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134159710637270000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\351306\\bergamot-elevation-a-e5e32200cf0b.jpg",
+        "homeName":  "Meadow - Bergamot",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "288726",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/brookfield-residential-sage-clover/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/mx2d40cs/clover-a.jpg?mode=min&quality=80&width=720&rnd=134250547889730000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\288726\\clover-a-f4f7d9781c84.jpg",
+        "homeName":  "Highland Sage - Clover",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Home Plan",
+        "badge":  "Virtual Tour"
+    },
+    {
+        "homeId":  "288750",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/brookfield-residential-ridge-lantana/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/jkujg32g/lantana-a.jpg?mode=min&quality=80&width=720&rnd=134250480153400000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\288750\\lantana-a-41029d821846.jpg",
+        "homeName":  "Highland Ridge - Lantana",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Home Plan",
+        "badge":  "Virtual Tour"
+    },
+    {
+        "homeId":  "351371",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/pulte-hummingbird/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/a0xm3vpz/hummingbird-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134159710855400000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\351371\\hummingbird-elevation-a-f6b47768cb7c.jpg",
+        "homeName":  "Meadow - Hummingbird",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  "Model Home"
+    },
+    {
+        "homeId":  "338773",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/brookfield-residential-mariposa-acacia/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/x5zdwat4/highland-mariposa-acacia-spanish-colonial.jpg?mode=min&quality=80&width=720&rnd=134250466729800000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\338773\\highland-mariposa-acacia-spanish-colonial-a5d815cbfcb9.jpg",
+        "homeName":  "Highland Mariposa - Acacia",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "351372",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/pulte-nectar/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/31wdxjvx/nectar-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134159711412170000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\351372\\nectar-elevation-a-b6c7734abdec.jpg",
+        "homeName":  "Meadow - Nectar",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "288751",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/brookfield-residential-ridge-laredo/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/0axaze5o/laredo-a.jpg?mode=min&quality=80&width=720&rnd=134250481993100000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\288751\\laredo-a-13940c04ce85.jpg",
+        "homeName":  "Highland Ridge - Laredo",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Home Plan",
+        "badge":  "Model Home & Virtual Tour"
+    },
+    {
+        "homeId":  "288738",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/brookfield-residential-sage-dakota/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/enao1iw2/dakota-a.jpg?mode=min&quality=80&width=720&rnd=134250546406770000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\288738\\dakota-a-f2aaddacb94c.jpg",
+        "homeName":  "Highland Sage - Dakota",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Home Plan",
+        "badge":  "Model Home & Virtual Tour"
+    },
+    {
+        "homeId":  "354331",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/pulte-potenza-lot-118-12420-w-jones-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/mtipaaoa/potenza-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134159728557900000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\354331\\potenza-elevation-a-0507abf744ad.jpg",
+        "homeName":  "Cactus - Potenza",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Lot 118 - 12420 W Jones Ave",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "288697",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/lennar-barbaro/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/tqhbcxcc/lennar-barbaro-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134190946331770000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\288697\\lennar-barbaro-elevation-a-9bf5cb9b0e0a.jpg",
+        "homeName":  "Barbaro",
+        "builderName":  "Lennar",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "359505",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/lennar-lot-83-12609-w-odeum-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/tqhbcxcc/lennar-barbaro-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134190946331770000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\359505\\lennar-barbaro-elevation-a-9bf5cb9b0e0a.jpg",
+        "homeName":  "Barbaro",
+        "builderName":  "Lennar",
+        "homeAddress":  "Lot 83 - 12609 W Odeum Ln",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "351373",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/pulte-sunbird/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/g3mpy4ti/sunbird-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134159711860500000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\351373\\sunbird-elevation-a-16c25e70bef7.jpg",
+        "homeName":  "Meadow - Sunbird",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  "Model Home"
+    },
+    {
+        "homeId":  "360891",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-26-12502-w-odeum-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/5n2fbdch/azure-c.jpg?mode=min&quality=80&width=720&rnd=134250551493730000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\360891\\azure-c-7f776050f668.jpg",
+        "homeName":  "Highland Sage - Azure",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 26 - 12502 W Odeum Ln",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "351883",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-20-12554-w-odeum-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/mx2d40cs/clover-a.jpg?mode=min&quality=80&width=720&rnd=134250547889730000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\351883\\clover-a-f4f7d9781c84.jpg",
+        "homeName":  "Highland Sage - Clover",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 20 - 12554 W Odeum Ln",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "351381",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/pulte-potenza/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/mtipaaoa/potenza-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134159728557900000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\351381\\potenza-elevation-a-0507abf744ad.jpg",
+        "homeName":  "Cactus - Potenza",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "351884",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-75-12555-w-odeum-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/5neann25/clover-b.jpg?mode=min&quality=80&width=720&rnd=134250547889730000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\351884\\clover-b-6eeac40c9508.jpg",
+        "homeName":  "Highland Sage - Clover",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 75 - 12555 W Odeum Ln",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "359506",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/lennar-lot-12-12606-w-odeum-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/r2yo5bn5/lennar-lewis-elevationa.jpg?mode=min&quality=80&width=720&rnd=134190947399170000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\359506\\lennar-lewis-elevationa-96e2f452bafe.jpg",
+        "homeName":  "Lewis",
+        "builderName":  "Lennar",
+        "homeAddress":  "Lot 12 - 12606 W Odeum Ln",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "360892",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-70-12507-w-odeum-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/5neann25/clover-b.jpg?mode=min&quality=80&width=720&rnd=134250547889730000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\360892\\clover-b-6eeac40c9508.jpg",
+        "homeName":  "Highland Sage - Clover",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 70 - 12507 W Odeum Ln",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "358218",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-23-12514-w-odeum-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/25jogbfu/clover-c.jpg?mode=min&quality=80&width=720&rnd=134250547889900000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\358218\\clover-c-7a19334c4048.jpg",
+        "homeName":  "Highland Sage - Clover",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 23 - 12514 W Odeum Ln",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "288727",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/brookfield-residential-sage-rockrose/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/txobxb0h/rockrose-a.jpg?mode=min&quality=80&width=720&rnd=134250548001630000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\288727\\rockrose-a-57e680c756a0.jpg",
+        "homeName":  "Highland Sage - Rockrose",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Home Plan",
+        "badge":  "Virtual Tour"
+    },
+    {
+        "homeId":  "338776",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/brookfield-residential-mariposa-ironwood/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/wcclw1f1/highland-mariposa-ironwood-spanish-colonial.jpg?mode=min&quality=80&width=720&rnd=134250461626930000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\338776\\highland-mariposa-ironwood-spanish-colonial-c0144be20ea2.jpg",
+        "homeName":  "Highland Mariposa - Ironwood",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "288704",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/lennar-ironwood/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/0nkjmlqg/lennar-ironwood-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134190946875230000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\288704\\lennar-ironwood-elevation-a-e66726c5fb6e.jpg",
+        "homeName":  "Ironwood",
+        "builderName":  "Lennar",
+        "homeAddress":  "Home Plan",
+        "badge":  "Model Home"
+    },
+    {
+        "homeId":  "352423",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-197-12427-w-atlantis-way/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/vu2jsglz/lantana-b.jpg?mode=min&quality=80&width=720&rnd=134250480153570000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\352423\\lantana-b-57c7be582fe8.jpg",
+        "homeName":  "Highland Ridge - Lantana",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 197 - 12427 W Atlantis Way",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "352425",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-199-12435-w-atlantis-way/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/jkujg32g/lantana-a.jpg?mode=min&quality=80&width=720&rnd=134250480153400000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\352425\\lantana-a-41029d821846.jpg",
+        "homeName":  "Highland Ridge - Lantana",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 199 - 12435 W Atlantis Way",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "352426",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-178-12436-w-atlantis-way/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/vu2jsglz/lantana-b.jpg?mode=min&quality=80&width=720&rnd=134250480153570000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\352426\\lantana-b-57c7be582fe8.jpg",
+        "homeName":  "Highland Ridge - Lantana",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 178 - 12436 W Atlantis Way",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "288709",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/lennar-lewis/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/r2yo5bn5/lennar-lewis-elevationa.jpg?mode=min&quality=80&width=720&rnd=134190947399170000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\288709\\lennar-lewis-elevationa-96e2f452bafe.jpg",
+        "homeName":  "Lewis",
+        "builderName":  "Lennar",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "296652",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/richmond-american-alexandrite/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/9718281/richmond-american-alamar-alexandritep921-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134061442269130000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\296652\\richmond-american-alamar-alexandritep921-elevation-a-d87da34d08e9.jpg",
+        "homeName":  "Fire Sky - Alexandrite",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "354332",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/pulte-acerra-lot-121-12408-w-jones-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/kvoltj04/acerra-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134159729412070000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\354332\\acerra-elevation-a-fc5c9fb5e199.jpg",
+        "homeName":  "Cactus - Acerra",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Lot 121 - 12408 W Jones Ave",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "338778",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/brookfield-residential-mariposa-agave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/csfjp0xm/highland-mariposa-agave-spanish-colonial.jpg?mode=min&quality=80&width=720&rnd=134250464935670000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\338778\\highland-mariposa-agave-spanish-colonial-f0aa07a2ada1.jpg",
+        "homeName":  "Highland Mariposa - Agave",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Home Plan",
+        "badge":  "Model Home & Virtual Tour"
+    },
+    {
+        "homeId":  "362008",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/pulte-acerra-lot-117-12424-w-jones-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/zfkhlmwx/acerra-elevation-b.jpg?mode=min&quality=80&width=720&rnd=134159729263400000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362008\\acerra-elevation-b-3fe1bf564fb6.jpg",
+        "homeName":  "Cactus - Acerra",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Lot 117 - 12424 W Jones Ave",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "296646",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/richmond-american-alden/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/9717005/richmond-american-alamar-aldenp844-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134061446307170000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\296646\\richmond-american-alamar-aldenp844-elevation-a-127ff5b6159a.jpg",
+        "homeName":  "Bridle Park - Alden",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "351383",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/pulte-acerra/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/kvoltj04/acerra-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134159729412070000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\351383\\acerra-elevation-a-fc5c9fb5e199.jpg",
+        "homeName":  "Cactus - Acerra",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "352420",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-179-12432-w-atlantis-way/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/0axaze5o/laredo-a.jpg?mode=min&quality=80&width=720&rnd=134250481993100000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\352420\\laredo-a-13940c04ce85.jpg",
+        "homeName":  "Highland Ridge - Laredo",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 179 - 12432 W Atlantis Way",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "354333",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/pulte-barletta-lot-136-12407-w-jones-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/t11lhrlu/barletta-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134159730036230000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\354333\\barletta-elevation-a-0bcc56c22057.jpg",
+        "homeName":  "Cactus - Barletta",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Lot 136 - 12407 W Jones Ave",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "357806",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/pulte-barletta-lot-119-12416-w-jones-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/yqgahjne/barletta-elevation-c.jpg?mode=min&quality=80&width=720&rnd=134159729730070000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\357806\\barletta-elevation-c-7ff7b9ddb963.jpg",
+        "homeName":  "Cactus - Barletta",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Lot 119 - 12416 W Jones Ave",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "351385",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/pulte-barletta/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/t11lhrlu/barletta-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134159730036230000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\351385\\barletta-elevation-a-0bcc56c22057.jpg",
+        "homeName":  "Cactus - Barletta",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  "Model Home"
+    },
+    {
+        "homeId":  "359504",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/lennar-lot-11-12610-w-odeum-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/ibnbqxd3/lennar-latitude-elevationa.jpg?mode=min&quality=80&width=720&rnd=134190947888300000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\359504\\lennar-latitude-elevationa-dad03870835e.jpg",
+        "homeName":  "Latitude",
+        "builderName":  "Lennar",
+        "homeAddress":  "Lot 11 - 12610 W Odeum Ln",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "357808",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-245-12513-w-southgate-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/ok2dsnrm/highland-mariposa-acacia-arizona-ranch.jpg?mode=min&quality=80&width=720&rnd=134250466932000000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\357808\\highland-mariposa-acacia-arizona-ranch-57fe76f3af28.jpg",
+        "homeName":  "Highland Mariposa - Acacia",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 245 - 12513 W Southgate Ave",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "358220",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-72-12515-w-odeum-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/pzriqduu/dakota-b.jpg?mode=min&quality=80&width=720&rnd=134250546406770000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\358220\\dakota-b-494e8c19800b.jpg",
+        "homeName":  "Highland Sage - Dakota",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 72 - 12515 W Odeum Ln",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "296649",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/richmond-american-agate/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/9718278/richmond-american-alamar-agatep922-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134061441900530000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\296649\\richmond-american-alamar-agatep922-elevation-a-ee11c9971cba.jpg",
+        "homeName":  "Fire Sky - Agate",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  "Model Home"
+    },
+    {
+        "homeId":  "357807",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/pulte-cantania-lot-120-12412-w-jones-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/vdhapmq5/cantania-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134159730609300000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\357807\\cantania-elevation-a-200739b312e1.jpg",
+        "homeName":  "Cactus - Cantania",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Lot 120 - 12412 W Jones Ave",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "288710",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/lennar-latitude/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/ibnbqxd3/lennar-latitude-elevationa.jpg?mode=min&quality=80&width=720&rnd=134190947888300000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\288710\\lennar-latitude-elevationa-dad03870835e.jpg",
+        "homeName":  "Latitude",
+        "builderName":  "Lennar",
+        "homeAddress":  "Home Plan",
+        "badge":  "Model Home"
+    },
+    {
+        "homeId":  "362813",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/lennar-lot-8-12622-w-odeum-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/k1ydgsg2/lennar-latitude-elevation-m.jpg?mode=min&quality=80&width=720&rnd=134190947996270000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362813\\lennar-latitude-elevation-m-117283fa95b3.jpg",
+        "homeName":  "Latitude",
+        "builderName":  "Lennar",
+        "homeAddress":  "Lot 8 - 12622 W Odeum Ln",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "338780",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/brookfield-residential-mariposa-lily/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/3fdpxtdo/highland-mariposa-lily-spanish-colonial.jpg?mode=min&quality=80&width=720&rnd=134250459628200000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\338780\\highland-mariposa-lily-spanish-colonial-4da72daff131.jpg",
+        "homeName":  "Highland Mariposa - Lily",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "296650",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/richmond-american-slate/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/9718288/richmond-american-alamar-slatep927-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134061441691870000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\296650\\richmond-american-alamar-slatep927-elevation-a-17c4b493c7e5.jpg",
+        "homeName":  "Fire Sky - Slate",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "288753",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/brookfield-residential-ridge-ponderosa/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/emjffqio/ponderosa-a.jpg?mode=min&quality=80&width=720&rnd=134250484201700000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\288753\\ponderosa-a-1f8df5ef0c4b.jpg",
+        "homeName":  "Highland Ridge - Ponderosa",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Home Plan",
+        "badge":  "Model Home & Virtual Tour"
+    },
+    {
+        "homeId":  "352421",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-181-12424-w-atlantis-way/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/wovjz5d3/laredo-b.jpg?mode=min&quality=80&width=720&rnd=134250481993730000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\352421\\laredo-b-5717dcf84d15.jpg",
+        "homeName":  "Highland Ridge - Laredo",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 181 - 12424 W Atlantis Way",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "352422",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-198-12431-w-atlantis-way/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/kmxnyyx4/laredo-c.jpg?mode=min&quality=80&width=720&rnd=134250481994030000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\352422\\laredo-c-4f73b33ccccc.jpg",
+        "homeName":  "Highland Ridge - Laredo",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 198 - 12431 W Atlantis Way",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "362820",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/richmond-american-lot-114-12377-w-luxton-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/9718281/richmond-american-alamar-alexandritep921-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134061442269130000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362820\\richmond-american-alamar-alexandritep921-elevation-a-d87da34d08e9.jpg",
+        "homeName":  "Fire Sky - Alexandrite",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Lot 114 - 12377 W Luxton Ln",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "296648",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/richmond-american-raleigh/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/nm5ntygg/raleigh-exterior.jpg?mode=min&quality=80&width=720&rnd=134061457825700000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\296648\\raleigh-exterior-2cbeb5e7ab00.jpg",
+        "homeName":  "Bridle Park - Raleigh",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  "Model Home & Virtual Tour"
+    },
+    {
+        "homeId":  "296644",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/richmond-american-celeste/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/9717008/richmond-american-alamar-celestep243-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134061445747600000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\296644\\richmond-american-alamar-celestep243-elevation-a-86d572a6923e.jpg",
+        "homeName":  "Bridle Park - Celeste",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "296647",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/richmond-american-townsend/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/9717014/richmond-american-alamar-townsendp843-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134061443742670000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\296647\\richmond-american-alamar-townsendp843-elevation-a-7b7ec7231a00.jpg",
+        "homeName":  "Bridle Park - Townsend",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "288752",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/brookfield-residential-ridge-heritage/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/wfgddaof/heritage-a.jpg?mode=min&quality=80&width=720&rnd=134250485799200000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\288752\\heritage-a-2a5f98278767.jpg",
+        "homeName":  "Highland Ridge - Heritage",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Home Plan",
+        "badge":  "Virtual Tour"
+    },
+    {
+        "homeId":  "351387",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/pulte-cantania/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/vdhapmq5/cantania-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134159730609300000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\351387\\cantania-elevation-a-200739b312e1.jpg",
+        "homeName":  "Cactus - Cantania",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "362823",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/richmond-american-lot-128-12362-w-luxton-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/9718276/richmond-american-alamar-agatep922-elevation-b.jpg?mode=min&quality=80&width=720&rnd=134061442019400000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362823\\richmond-american-alamar-agatep922-elevation-b-aa40a6b3e28a.jpg",
+        "homeName":  "Fire Sky - Agate",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Lot 128 - 12362 W Luxton Ln",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "305661",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/richmond-american-lot-36-12012-w-parkway-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/tikmt4c4/richmond-american-alamar-12012-w-parkway-ln-exterior.jpg?mode=min&quality=80&width=720&rnd=133953269792400000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\305661\\richmond-american-alamar-12012-w-parkway-ln-exterior-170ad78d3578.jpg",
+        "homeName":  "Bridle Park - Townsend",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Lot 36 - 12012 W Parkway Ln",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "338782",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/brookfield-residential-mariposa-solstice/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/itflvzbs/highland-mariposa-solstice-spanish-colonial.jpg?mode=min&quality=80&width=720&rnd=134250456877570000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\338782\\highland-mariposa-solstice-spanish-colonial-6ead322266e4.jpg",
+        "homeName":  "Highland Mariposa - Solstice",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "358222",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-246-12517-w-southgate-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/qmhf4lzc/highland-mariposa-ironwood-traditional-southwest.jpg?mode=min&quality=80&width=720&rnd=134250462019330000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\358222\\highland-mariposa-ironwood-traditional-southwest-76e5f7acd362.jpg",
+        "homeName":  "Highland Mariposa - Ironwood",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 246 - 12517 W Southgate Ave",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "358223",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-249-12561-w-southgate-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/c1pazgt0/highland-mariposa-ironwood-arizona-ranch.jpg?mode=min&quality=80&width=720&rnd=134250461820230000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\358223\\highland-mariposa-ironwood-arizona-ranch-4824f6f2cea0.jpg",
+        "homeName":  "Highland Mariposa - Ironwood",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 249 - 12561 W Southgate Ave",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "354334",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/pulte-cantania-lot-122-12404-w-jones-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/3v0jftos/cantania-elevation-c.jpg?mode=min&quality=80&width=720&rnd=134159730307230000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\354334\\cantania-elevation-c-f3275e166da1.jpg",
+        "homeName":  "Cactus - Cantania",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Lot 122 - 12404 W Jones Ave",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "337451",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/richmond-american-lot-90-12365-w-parkway-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/xrwcos3u/12365-w-parkway-ln-exterior.jpg?mode=min&quality=80&width=720&rnd=134193462249970000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\337451\\12365-w-parkway-ln-exterior-380ace6d85e0.jpg",
+        "homeName":  "Fire Sky - Elderberry",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Lot 90 - 12365 W Parkway Ln",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "296651",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/richmond-american-elderberry/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/9718283/richmond-american-alamar-elderberryp966-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134061442635370000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\296651\\richmond-american-alamar-elderberryp966-elevation-a-efad685e8c8b.jpg",
+        "homeName":  "Fire Sky - Elderberry",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  "Model Home"
+    },
+    {
+        "homeId":  "351389",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/pulte-starling/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/r5sbzch0/starling-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134159731159800000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\351389\\starling-elevation-a-339491b526b6.jpg",
+        "homeName":  "Cactus - Starling",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  "Model Home"
+    },
+    {
+        "homeId":  "358221",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-250-12565-w-southgate-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/txtp4x0k/highland-mariposa-agave-traditional-southwest.jpg?mode=min&quality=80&width=720&rnd=134250465409930000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\358221\\highland-mariposa-agave-traditional-southwest-bdb64ac4cf2f.jpg",
+        "homeName":  "Highland Mariposa - Agave",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 250 - 12565 W Southgate Ave",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "362009",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/pulte-starling-lot-138-12415-w-jones-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/lm3hvbpq/starling-exterior.jpg?mode=min&quality=80&width=720&rnd=134199535824330000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362009\\starling-exterior-5a83f64d7535.jpg",
+        "homeName":  "Cactus - Starling",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Lot 138 - 12415 W Jones Ave",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "362817",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-244-12509-w-southgate-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/txtp4x0k/highland-mariposa-agave-traditional-southwest.jpg?mode=min&quality=80&width=720&rnd=134268604344800000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362817\\highland-mariposa-agave-traditional-southwest-13d962733878.jpg",
+        "homeName":  "Highland Mariposa - Agave",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 244 - 12509 W Southgate Ave",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "354335",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/pulte-starling-lot-137-12411-w-jones-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/tqjbzi4z/starling-elevation-b.jpg?mode=min&quality=80&width=720&rnd=134159731016030000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\354335\\starling-elevation-b-7acf5fd961ee.jpg",
+        "homeName":  "Cactus - Starling",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Lot 137 - 12411 W Jones Ave",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "362825",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/richmond-american-lot-111-12365-w-luxton-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/9718285/richmond-american-alamar-elderberryp966-elevation-d.jpg?mode=min&quality=80&width=720&rnd=134061442871130000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362825\\richmond-american-alamar-elderberryp966-elevation-d-89d5b762ded9.jpg",
+        "homeName":  "Fire Sky - Elderberry",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Lot 111 - 12365 W Luxton Ln",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "351391",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/pulte-visionary/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/xspd3l2g/visionary-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134159731741730000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\351391\\visionary-elevation-a-2378fb0830a4.jpg",
+        "homeName":  "Cactus - Visionary",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "352416",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-248-12557-w-southgate-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/yvldfyqg/highland-mariposa-lily-arizona-ranch.jpg?mode=min&quality=80&width=720&rnd=134250459808470000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\352416\\highland-mariposa-lily-arizona-ranch-2f473d7fd22a.jpg",
+        "homeName":  "Highland Mariposa - Lily",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 248 - 12557 W Southgate Ave",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "362824",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/richmond-american-lot-127-12366-w-luxton-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/9718285/richmond-american-alamar-elderberryp966-elevation-d.jpg?mode=min&quality=80&width=720&rnd=134061442871130000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362824\\richmond-american-alamar-elderberryp966-elevation-d-89d5b762ded9.jpg",
+        "homeName":  "Fire Sky - Elderberry",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Lot 127 - 12366 W Luxton Ln",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "359786",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/richmond-american-lot-113-12373-w-luxton-ln/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/9718284/richmond-american-alamar-elderberryp966-elevation-b.jpg?mode=min&quality=80&width=720&rnd=134061442754770000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\359786\\richmond-american-alamar-elderberryp966-elevation-b-f41e8ff86d99.jpg",
+        "homeName":  "Fire Sky - Elderberry",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Lot 113 - 12373 W Luxton Ln",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "350757",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/richmond-american-powell/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/zcrhlq4z/powell-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134152780862570000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\350757\\powell-elevation-a-43f404ea5dde.jpg",
+        "homeName":  "Estates - Powell",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "362010",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/pulte-visionary-lot-139-12419-w-jones-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/xspd3l2g/visionary-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134159731741730000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\362010\\visionary-elevation-a-2378fb0830a4.jpg",
+        "homeName":  "Cactus - Visionary",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Lot 139 - 12419 W Jones Ave",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "330648",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/william-ryan-homes-lot-300-12712-w-corona-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/3s2h1jg5/william-ryan-alamar-12712-w-corona-ave-exterior.jpg?mode=min&quality=80&width=720&rnd=133953212294570000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\330648\\william-ryan-alamar-12712-w-corona-ave-exterior-e0e008effba6.jpg",
+        "homeName":  "Camelback",
+        "builderName":  "William Ryan Homes",
+        "homeAddress":  "Lot 300 - 12712 W Corona Ave",
+        "badge":  "Fully Furnished"
+    },
+    {
+        "homeId":  "352417",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/brookfield-residential-lot-247-12553-w-southgate-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/itflvzbs/highland-mariposa-solstice-spanish-colonial.jpg?mode=min&quality=80&width=720&rnd=134268604989370000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\352417\\highland-mariposa-solstice-spanish-colonial-ceffca5a83a0.jpg",
+        "homeName":  "Highland Mariposa - Solstice",
+        "builderName":  "Brookfield Residential",
+        "homeAddress":  "Lot 247 - 12553 W Southgate Ave",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "354336",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/pulte-visionary-lot-135-12403-w-jones-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/o2inmx14/visionary-elevation-b.jpg?mode=min&quality=80&width=720&rnd=134159731596900000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\354336\\visionary-elevation-b-883e4919d15a.jpg",
+        "homeName":  "Cactus - Visionary",
+        "builderName":  "Pulte Homes",
+        "homeAddress":  "Lot 135 - 12403 W Jones Ave",
+        "badge":  "FEATURED"
+    },
+    {
+        "homeId":  "350772",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/richmond-american-deacon/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/tptl4v24/deacon-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134152780645700000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\350772\\deacon-elevation-a-1ac74d967552.jpg",
+        "homeName":  "Estates - Deacon",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "350767",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/model/richmond-american-darius/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/wfdp2tmg/darius-elevation-a.jpg?mode=min&quality=80&width=720&rnd=134152779941230000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\350767\\darius-elevation-a-45d4a09c7114.jpg",
+        "homeName":  "Estates - Darius",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Home Plan",
+        "badge":  null
+    },
+    {
+        "homeId":  "359784",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/richmond-american-celeste-lot-74-4617-s-119th-dr/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/9717007/richmond-american-alamar-celestep243-elevation-d.jpg?mode=min&quality=80&width=720&rnd=134061446127470000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\359784\\richmond-american-alamar-celestep243-elevation-d-d3e22e260f3c.jpg",
+        "homeName":  "Bridle Park - Celeste",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Lot 74 - 4617 S 119th Dr",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "360165",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/richmond-american-raleigh-lot-75-4621-s-119th-dr/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/9717010/richmond-american-alamar-raleighp741-elevation-d.jpg?mode=min&quality=80&width=720&rnd=134061457676170000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\360165\\richmond-american-alamar-raleighp741-elevation-d-081a554d11e9.jpg",
+        "homeName":  "Bridle Park - Raleigh",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Lot 75 - 4621 S 119th Dr",
+        "badge":  "Quick Move-In Home"
+    },
+    {
+        "homeId":  "360166",
+        "homeLink":  "https://www.liveatalamar.com/homefinder/inventory/richmond-american-raleigh-lot-71-11933-w-marguerite-ave/",
+        "thumbnailImage":  "https://www.liveatalamar.com/media/9717010/richmond-american-alamar-raleighp741-elevation-d.jpg?mode=min&quality=80&width=720&rnd=134061457676170000",
+        "localImagePath":  "E:\\CodeChallange\\PSScrapper\\Repo\\pswebscrapper\\Images\\thumbnails\\360166\\richmond-american-alamar-raleighp741-elevation-d-081a554d11e9.jpg",
+        "homeName":  "Bridle Park - Raleigh",
+        "builderName":  "Richmond American Homes",
+        "homeAddress":  "Lot 71 - 11933 W Marguerite Ave",
+        "badge":  "Quick Move-In Home"
+    }
+]

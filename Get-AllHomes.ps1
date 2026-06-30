@@ -214,6 +214,20 @@ try {
                     [System.Net.WebUtility]::HtmlDecode($thumbnailImage).Trim()
                 } else { $null }
 
+                if ($thumbnailImage -and $homeLink) {
+                    try {
+                        $homeUri = [uri] $homeLink
+                        $homeOrigin = [uri] ($homeUri.GetLeftPart(
+                            [System.UriPartial]::Authority) + '/')
+                        $thumbnailImage = ([uri]::new(
+                            $homeOrigin,
+                            $thumbnailImage)).AbsoluteUri
+                    }
+                    catch {
+                        # Keep the extracted value when either URL is malformed.
+                    }
+                }
+
                 $thumbnailDirectory = Join-Path $ImageOutputDirectory (Get-SafePathPart $homeId)
 
                 $localThumbnailPath = Save-ImageIfMissing `
@@ -243,7 +257,8 @@ try {
     )
 
     Write-StatusMessage "Complete: scraped $($results.Count) home card(s)."
-    ConvertTo-Json -InputObject $results -Depth 5 -Compress
+    $json = ConvertTo-Json -InputObject $results -Depth 5 -Compress
+    $json -replace '\\u0026', '&'
 }
 catch {
     Write-StatusMessage "Failed: $($_.Exception.Message)"
