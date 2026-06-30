@@ -397,7 +397,12 @@ try {
                             ) {
                                 # Preserve paragraph, strong, span, and br markup
                                 # for Sitecore Rich Text Editor fields.
-                                $_.InnerHtml.Trim()
+                                $richTextHtml = $_.InnerHtml.Trim()
+                                if ($richTextHtml -match '&lt;/?[a-zA-Z][^&]*&gt;') {
+                                    $richTextHtml = [System.Net.WebUtility]::HtmlDecode(
+                                        $richTextHtml)
+                                }
+                                $richTextHtml
                             }
                             else {
                                 Get-NormalizedText $_.InnerText
